@@ -295,48 +295,6 @@ footer {
 	padding-top: 100px;
 }
 
-#about .abouttable{
-	display: inline-block;
-	margin-top: 100px;
-	border: .5px solid rgba(0, 0, 0, 0.3);
-	padding:15px;
-	border-radius: 15px;
-	color: rgba(0,0,0,0.8);
-	font-size: 16px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 24px;
-}
-#about .firsttable{
-	margin-right:.65vw;
-}
-
-@media (max-width:992px) {
-	#about .abouttable{
-		font-size: 18px;
-		width: 100%;
-	}
-}
-
-@media (min-width:1200px) {
-	#about .abouttable{
-		font-size: 18px;
-	}
-	#about .firsttable{
-		margin-right:5vw;
-	}
-}
-
-#about .abouttable th {
-	text-align: center;
-}
-
-#about .abouttable tr td,
-#about .abouttable tr th {
-	padding: 10px
-}
-
-
 #about p,
 #about ul {
 	text-align: justify
@@ -379,18 +337,21 @@ footer {
 }
 
 #about .impdates {
-	margin-top: 5vh;
+	border-collapse: separate;
+	margin-top: 10vh;
 	width: 100%;
-	border: 1px solid #000;
-	color: #888;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 20px;
+	color: rgba(0,0,0,0.8);
+	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 1px;
-	line-height: 34px
+	line-height: 34px;
 }
 
 #about .impdates th {
 	text-align: center;
-	border: 1px solid #000
+	border-bottom: 1px solid #000
 }
 
 #about .centrealign {
