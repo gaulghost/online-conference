@@ -182,7 +182,7 @@ footer {
 	color: #777;
 	font-size: 14px;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: .85px;
 	text-transform: uppercase;
 	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
@@ -251,7 +251,6 @@ footer {
 		background: 0 0!important
 	}
 }
-
 
 .homeimg{
 	background: url('../images/homeimg.jpg') 50% 0 no-repeat;
