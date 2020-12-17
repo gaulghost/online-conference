@@ -154,8 +154,7 @@ footer {
 
 .navbar .brandimg {
 	padding-right: 4px;
-	/* width: 50px !important; */
-	height: 50px !important;
+	width: 150px !important;
 }
 
 .custom-navbar {
