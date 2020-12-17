@@ -154,7 +154,8 @@ footer {
 
 .navbar .brandimg {
 	padding-right: 4px;
-	width: 50px !important;
+	/* width: 50px !important; */
+	height: 50px !important;
 }
 
 .custom-navbar {
@@ -259,7 +260,20 @@ footer {
 }
 
 .clgimg{
-	background: url('../images/clgimg.jpeg') 50% 0 no-repeat;
+	background: url('../images/clgimg.png') 50% 0 no-repeat;
+	background-size: cover;
+    background-position: center center;
+}
+
+.ewce-img{
+	background: url('../images/ewce-img.jpeg') 50% 0 no-repeat;
+	background-size: cover;
+    background-position: center center;
+}
+
+
+.rjit-img{
+	background: url('../images/rjit-img.jpeg') 50% 0 no-repeat;
 	background-size: cover;
     background-position: center center;
 }
