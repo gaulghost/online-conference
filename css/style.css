@@ -154,7 +154,12 @@ footer {
 
 .navbar .brandimg {
 	padding-right: 4px;
-	width: 150px !important;
+	width: 100px !important;
+}
+
+.navbar .brandimg1 {
+	padding-right: 4px;
+	width: 50px !important;
 }
 
 .custom-navbar {
@@ -189,7 +194,7 @@ footer {
 	padding-right: 22px;
 	padding-left: 22px
 }
-
+/*
 .custom-navbar .navbar-nav li a span {
 	position: relative;
 	display: block;
@@ -224,7 +229,7 @@ footer {
 	-ms-transform: scaleX(1);
 	-o-transform: scaleX(1);
 	transform: scaleX(1)
-}
+} */
 
 .custom-navbar .navbar-nav>li a:hover {
 	color: #304352!important
@@ -245,12 +250,12 @@ footer {
 .custom-navbar .navbar-toggle:hover {
 	background-color: transparent
 }
-
+/*
 @media screen and (max-width:768px) {
 	.custom-navbar .navbar-nav li a span:before {
 		background: 0 0!important
 	}
-}
+} */
 
 .homeimg{
 	background: url('../images/homeimg.jpg') 50% 0 no-repeat;

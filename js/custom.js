@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
-    $('.navbar-collapse a').click(function(){
+    $('.navbar-collapse .autocollapse').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 
@@ -27,22 +27,22 @@ $(document).ready(function() {
       });
   });
 
-
- /* Home Slideshow Vegas
-  -----------------------------------------------*/
-  $(function() {
-    $('body').vegas({
-        slides: [
-            { src: 'images/slide-img1.jpg' },
-            { src: 'images/slide-img2.jpg' },
-            { src: 'images/slide-img3.jpg' }
-        ],
-        timer: false,
-        transition: [ 'zoomIn', ],
-        animation: ['kenburns']
-    });
-  });
-
+ //
+ // /* Home Slideshow Vegas
+ //  -----------------------------------------------*/
+ //  $(function() {
+ //    $('body').vegas({
+ //        slides: [
+ //            { src: 'images/slide-img1.jpg' },
+ //            { src: 'images/slide-img2.jpg' },
+ //            { src: 'images/slide-img3.jpg' }
+ //        ],
+ //        timer: false,
+ //        transition: [ 'zoomIn', ],
+ //        animation: ['kenburns']
+ //    });
+ //  });
+ //
 
   /* Team carousel
   -----------------------------------------------*/
