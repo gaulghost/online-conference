@@ -263,24 +263,12 @@ footer {
     background-position: center center;
 }
 
-.clgimg{
-	background: url('../images/clgimg.png') 50% 0 no-repeat;
+.organizer-img{
+	background: url('../images/organizer-img.jpeg') 50% 0 no-repeat;
 	background-size: cover;
     background-position: center center;
 }
 
-.ewce-img{
-	background: url('../images/ewce-img.jpeg') 50% 0 no-repeat;
-	background-size: cover;
-    background-position: center center;
-}
-
-
-.rjit-img{
-	background: url('../images/rjit-img.jpeg') 50% 0 no-repeat;
-	background-size: cover;
-    background-position: center center;
-}
 
 #home {
 	display: -webkit-box;
