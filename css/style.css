@@ -492,3 +492,8 @@ footer {
 		padding-bottom: 80px
 	}
 }
+
+.webinarBanner {
+    height: 350px;
+    width: 650px;
+}
