@@ -458,7 +458,11 @@ footer {
 	background: #e44c65;
 	color: #fff
 }
-
+.pp-logo{
+	display: flex;
+	justify-content:space-around;
+	/* flex-direction:row; */
+}
 @media (max-width:767px) {
 	#home,
 	.overlay {
@@ -475,7 +479,17 @@ footer {
 		left: 0
 	}
 }
-
+.pp-img{
+	width: 30vw; 
+	height:100px;
+	margin:20px 0;
+	margin-top:50px;
+}
+.pp-img2{
+	width: 30vw;
+	height:150px;
+	margin:20px 0;
+}
 @media (max-width:650px) {
 	h1 {
 		font-size: 1.6rem
@@ -490,6 +504,21 @@ footer {
 	#gallery {
 		padding-top: 80px;
 		padding-bottom: 80px
+	}
+	.pp-logo{
+		flex-direction:column;		
+	}
+	.pp-img{
+		width: 75vw; 
+		height:90px;
+		display: block;
+		margin:30px auto;
+	}
+	.pp-img2{
+		width: 75vw; 
+		height:120px;
+		display: block;
+		margin:30px auto;
 	}
 }
 
