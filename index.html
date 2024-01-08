@@ -32,13 +32,13 @@
                         <a class="nav-link autocollapse" href="about-us.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smoothScroll autocollapse" href="iccids-Committee.html">Committee</a>
+                        <a class="nav-link smoothScroll autocollapse" href="./ICCIDS-24/iccids-Committee.html">Committee</a>
                     </li> 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Conferences</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item autocollapse" href="./ICCIDS-24/iccids-home.html">ICCIDS-2024</a>
-                            <a class="dropdown-item autocollapse" href="./ICCIDS-24/iccids-home.html">ICCIDS-2023</a>
+                            <a class="dropdown-item autocollapse" href="./ICCIDS-23/iccids-home.html">ICCIDS-2023</a>
                             <a class="dropdown-item autocollapse" href="ICCDI-2023/iccdi-home.html">ICCDI-2023</a>
                             <a class="dropdown-item autocollapse" href="previous-conference-proceedings.html">Previous Conferences Proceedings</a>
                         </div>
@@ -56,6 +56,10 @@
                     <li class="nav-item">
                         <a class="nav-link autocollapse" href="previous-conference-proceedings.html">Previous Conferences Proceedings</a>
                     </li> -->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link autocollapse" href="policy.html">Policy</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link autocollapse" href="contact.html">Contact Us</a>
                     </li>
@@ -126,8 +130,8 @@
                             <li><a href="https://www.linkedin.com/company/icicc2020/" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
                             <li><a href="mailto:onlineconference.com@gmail.com" class="fa fa-envelope wow fadeInUp" data-wow-delay="1.0s"></a></li>
                         </ul>
-                        <p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2020 Online Conference | All Rights Reserved |
-                            Design &#38; Developed By: <a href="https://github.com/gaulghost" title="Pradhuman" target="_blank">Pradhuman</a> | <a href="#">Siddhart</a> | <a href="#">Taha</a>
+                       <p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; <span id="year"></span> Online Conference | All Rights Reserved |
+                        </span>
                         </p>
                     </div>
                 </div>
@@ -136,6 +140,10 @@
         <!-- Back top -->
         <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
         <!-- Javascript  -->
+        <script type="text/javascript">
+        var year = new Date();
+        document.getElementById('year').innerText=year.getFullYear()
+        </script>
         <script src="js/all-min.js"></script>
         <script src="js/custom.js"></script>
     </body>
