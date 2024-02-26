@@ -86,9 +86,14 @@
                     <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="about-thumb">
                             <div style="padding:0rem 2rem;">
+                                <button class="tablink" onclick="openPage('privacy_policy', this, 'white')" id="defaultOpen">Privacy Policy</button>
+                                    <button class="tablink" onclick="openPage('terms_conditions', this, 'white')" >Terms and Conditions</button>
+                                    <button class="tablink" onclick="openPage('refunds', this, 'white')" >Cancellation and Refund Policy</button>
+                                    <button class="tablink" onclick="openPage('delivery', this, 'white')" >Shipping and Delivery Policy</button>
                                 <section style="text-align: 'left'; color: rgb(33, 37, 41); background-color: rgb(255, 255, 255); font-size: 18px">
-                                  <div>
-                                    <div>
+                                    
+                                  <div style="background-color:whitesmoke;padding: 10px;">
+                                    <div id="privacy_policy" class="tabcontent">
                                       <p>The statement outlines our policies for protecting your privacy with relation to the Personal Information we gather and maintain about you on this website as well as the Personal Information you give us while taking part in our campaigns and events.</p><strong>I. Personal Information we collect and process and how we use it</strong><br /><strong>1. Personal Information that we process</strong>
                                       <p>For the purposes of this privacy statement, "Personal Information" refers to any information that can be used to identify an individual, either alone or in conjunction with other information that Online conference may have. Generally speaking, you are not required to enter any Personal Information in order to browse our website. Nonetheless, we gather specific data like this:</p>
                                       <ul>
@@ -136,6 +141,43 @@
                                       <p>Our privacy practices regarding Personal Information that we collect and store about you through our portals will be as per the privacy policy of those portals.</p>
                                       <p>Online conference provides links to third-party websites and services. However, Online conference is not responsible for the privacy statements, practices, or the contents of such third-party websites.</p><strong>IX. Updates to this privacy statement</strong>
                                       <p>Online conference may change the data privacy practices and update this privacy statement as and when the need arises, and the same will be made available on the website. But our commitment to protect the privacy of website users will continue to remain.</p>
+                                    </div>
+                                    <div id="terms_conditions" class="tabcontent">
+                                        <p>The Website Owner, including subsidiaries and affiliates (“Website” or “Website Owner” or “we” or “us” or “our”) provides the information contained on the website or any of the pages comprising the website (“website”) to visitors (“visitors”) (cumulatively referred to as “you” or “your” hereinafter) subject to the terms and conditions set out in these website terms and conditions, the privacy policy and any other relevant terms and conditions, policies and notices which may be applicable to a specific section or module of the website.
+                                        </p><p>
+                                            Welcome to our website. If you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Online Conference''s relationship with you in relation to this website.
+                                            </p><p>
+                                            The term 'Online Conference' or 'us' or 'we' refers to the owner of the website whose registered/operational office is Second Floor, A-16, Sector-19, Rohini North West Delhi DELHI 110089. The term 'you' refers to the user or viewer of our website.
+                                        </p><p>
+                                            The use of this website is subject to the following terms of use:
+                                            <ul>
+                                            <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+                                            
+                                            <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+                                            
+                                            <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</li>
+                                            
+                                            <li>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+                                            
+                                            <li>All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</li>
+                                            
+                                            <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</li>
+                                            
+                                            <li>From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information.</li>
+                                            
+                                            <li>You may not create a link to this website from another website or document without Online Conference’s prior written consent.</li>
+                                            
+                                            <li>Your use of this website and any dispute arising out of such use of the website is subject to the laws of India or other regulatory authority.</li>
+                                        </ul>
+                                            We as a merchant shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time</p>
+                                    </div>
+                                    <div id="refunds" class="tabcontent">
+                                        <p>No cancellations & Refunds are entertained.
+
+                                       </p>
+                                    </div>
+                                    <div id="delivery" class="tabcontent">
+                                        Shipping is not applicable for business.
                                     </div>
                                   </div>
                                 </section>
@@ -186,6 +228,21 @@
         <script type="text/javascript">
         var year = new Date();
         document.getElementById('year').innerText=year.getFullYear()
+        </script>
+        <script>
+            const openPage=(pageName,elmnt,color)=>{
+                tabcontent=document.getElementsByClassName("tabcontent");
+                for(let i=0;i<tabcontent.length;i++){
+                    tabcontent[i].style.display="none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+            }
+            document.getElementById("defaultOpen").click();
         </script>
         <script src="js/all-min.js"></script>
         <script src="js/custom.js"></script>
